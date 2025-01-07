@@ -1,1 +1,1 @@
-This repo will store my all small and large prpject i mafe while learning react
+This repo will store all my small and large project i made while learning react
