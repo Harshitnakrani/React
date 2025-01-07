@@ -12,10 +12,10 @@ function App(){
   return(
     <>
       
-      <h1>{count}</h1>
+      <h1>number is {count}</h1>
       <button onClick = {addValue}>add </button>
       <button onClick = {subValue}>sub </button>
-      <h2>{count}</h2>      
+      <h2>number is {count}</h2>      
       </>
     )
 }
