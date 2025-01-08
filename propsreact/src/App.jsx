@@ -7,6 +7,7 @@ function App(props) {
   return (
     <>
     
+    
     <h1 className='bg-green-400 mb-5 w-50 rounded-xl  text-center p-3'>CARD WITH PROPS</h1>
     <Card nam = "harshit"/>
     <Card nam = "nirav"/>
@@ -14,4 +15,4 @@ function App(props) {
   )
 }
 
-export default App8
+export default App
