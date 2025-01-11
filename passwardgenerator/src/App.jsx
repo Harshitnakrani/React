@@ -9,7 +9,6 @@ function App() {
 
  const copypass = useCallback(()=>{
   window.navigator.clipboard.writeText(passward)
-  alert("pass copied")
  },[passward])
 
  const createpass = useCallback(()=>{
@@ -34,16 +33,16 @@ function App() {
  },[length,numallow,chaallow])
  return (
   <div className="w-full h-screen bg-black text-orange-500 p-6 justify-items-center">
-   <div className="bg-gray-700 py-5 px-3 rounded-xl bottom-96 text-orange-400p max-w-md w-full justify-items-center">
-        <h1 className="mb-3">Passward Generator</h1>
+   <div className="bg-gray-700 py-9 px-6 rounded-xl text-orange-400p max-w-xl w-full justify-items-center">
+        <h1 className="mb-6 shadow-xl text-4xl">Passward Generator</h1>
         <input 
         type="text" 
         value={passward}
         readOnly
-        className="p-2 rounded-md mr-3"
+        className="p-2 rounded-md mr-3 border-4"
         />
 
-         <button className="fixed bg-blue-800 py-2 rounded-xl px-4 shrink-0 outline-none" onClick={copypass}>Copy</button><br />
+         <button className="bg-gray-900 py-3 rounded-xl px-6 shrink-0 outline-none" onClick={copypass}>Copy</button><br />
          <input type="range" min={8} max={16} value={length} className="mt-2"
          onChange={(e)=>{setlength(e.target.value)}}
          />
