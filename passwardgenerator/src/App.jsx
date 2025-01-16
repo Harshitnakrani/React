@@ -8,7 +8,7 @@ function App() {
  const [chaallow,setcharallow] = useState(false)
 
  const copypass = useCallback(()=>{
-  window.navigator.clipboard.writeText(passward)
+  window.navigator.clipboard.writeText(passward) 
  },[passward])
 
  const createpass = useCallback(()=>{
